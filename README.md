@@ -18,7 +18,7 @@ Plugin is checking testers in your last app release and verify that all test dev
 
 Warning: This plugin is not automatically add devices to your profile, just checking included.
 
-##For setup required
+## For setup required
 
 * fabric_login - Fabric username or email
 * fabric_password - Fabric password for authorization (Fabric do not provide CI keys, api keys used for uploading builds to Crashlytics are not allow to see organization Beta releases)

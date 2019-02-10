@@ -7,21 +7,16 @@ require 'fastlane/plugin/fabric_beta_unregistered_devices/version'
 Gem::Specification.new do |spec|
   spec.name = 'fastlane-plugin-fabric_beta_unregistered_devices'
   spec.version = Fastlane::FabricBetaUnregisteredDevices::VERSION
-  spec.author = 'Starmel'
+  spec.author = 'Slava Kornienko'
   spec.email = 'slava.kornienko16@gmail.com'
 
   spec.summary = 'SHORT'
-  # spec.homepage      = "https://github.com/<GITHUB_USERNAME>/fastlane-plugin-fabric_beta_unregistered_devices"
+  spec.homepage = "https://github.com/Starmel/Fabric-Beta-unregistered-devices"
   spec.license = "MIT"
 
   spec.files = Dir["lib/**/*"] + %w(README.md LICENSE)
   spec.test_files = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ['lib']
-
-  # Don't add a dependency to fastlane or fastlane_re
-  # since this would cause a circular dependency
-
-  # spec.add_dependency 'your-dependency', '~> 1.0.0'
 
   spec.add_development_dependency('pry')
   spec.add_development_dependency('bundler')
