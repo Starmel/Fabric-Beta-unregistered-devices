@@ -1,0 +1,11 @@
+lane :test do
+  devices_to_register = fabric_beta_unregistered_devices(
+      fabric_login: "login",
+      fabric_password: "password",
+      fabric_organization_name: "organization",
+      bundle_identifier: "identifier",
+      apple_username: "username",
+      team_id: "team"
+  )
+  register_devices(devices: devices_to_register, username: "username") if devices_to_register.size > 0
+end
